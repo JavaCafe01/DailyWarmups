@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editFlip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:hint="String"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button_flip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/editFlip"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:text="Flip Halves" />
+
+        <Button
+            android:id="@+id/button_clear6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button_flip"
+            android:layout_alignLeft="@+id/button_flip"
+            android:layout_alignRight="@+id/button_flip"
+            android:layout_alignStart="@+id/button_flip"
+            android:layout_below="@+id/button_flip"
+            android:layout_marginTop="16dp"
+            android:text="Clear" />
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_clear6"
+            android:layout_centerHorizontal="true">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/flipView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="23dp"
+                    android:textSize="14sp" />
+
+
+            </HorizontalScrollView>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

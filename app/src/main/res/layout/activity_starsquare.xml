@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:hint="Table Size"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button_MakeTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/editSize"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:text="make table" />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button_MakeTable"
+            android:layout_alignLeft="@+id/button_MakeTable"
+            android:layout_alignRight="@+id/button_MakeTable"
+            android:layout_alignStart="@+id/button_MakeTable"
+            android:layout_below="@+id/button_MakeTable"
+            android:layout_marginTop="16dp"
+            android:text="Clear" />
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_clear"
+            android:layout_centerHorizontal="true">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tableView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="23dp"
+                    android:textSize="14sp" />
+
+
+            </HorizontalScrollView>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

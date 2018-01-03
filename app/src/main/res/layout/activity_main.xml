@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Pick a Warmup"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_starsquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button_revString"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/button_revString"
+            android:layout_below="@+id/textView"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:text="Star Square" />
+
+        <Button
+            android:id="@+id/button_revString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button_starsquare"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:text="Reverse String" />
+
+        <Button
+            android:id="@+id/button_triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_starsquare"
+            android:layout_alignBottom="@+id/button_starsquare"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="13dp"
+            android:text="Star Triangle" />
+
+        <Button
+            android:id="@+id/button_piglatin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_revString"
+            android:layout_alignBottom="@+id/button_revString"
+            android:layout_alignEnd="@+id/button_triangle"
+            android:layout_alignLeft="@+id/button_triangle"
+            android:layout_alignRight="@+id/button_triangle"
+            android:layout_alignStart="@+id/button_triangle"
+            android:text="Pig Latin" />
+
+        <Button
+            android:id="@+id/button_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button_revString"
+            android:layout_alignLeft="@+id/button_revString"
+            android:layout_alignRight="@+id/button_revString"
+            android:layout_alignStart="@+id/button_revString"
+            android:layout_below="@+id/button_revString"
+            android:layout_marginTop="13dp"
+            android:text="ArrayList" />
+
+        <Button
+            android:id="@+id/button_stringflip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_list"
+            android:layout_alignBottom="@+id/button_list"
+            android:layout_alignEnd="@+id/button_piglatin"
+            android:layout_alignLeft="@+id/button_piglatin"
+            android:layout_alignRight="@+id/button_piglatin"
+            android:layout_alignStart="@+id/button_piglatin"
+            android:text="Flip Halves" />
+
+        <Button
+            android:id="@+id/button_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button_list"
+            android:layout_alignLeft="@+id/button_list"
+            android:layout_alignRight="@+id/button_list"
+            android:layout_alignStart="@+id/button_list"
+            android:layout_below="@+id/button_list"
+            android:layout_marginTop="13dp"
+            android:text="Source" />
+
+        <Button
+            android:id="@+id/button_pigsource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_source"
+            android:layout_alignBottom="@+id/button_source"
+            android:layout_alignEnd="@+id/button_stringflip"
+            android:layout_alignLeft="@+id/button_stringflip"
+            android:layout_alignRight="@+id/button_stringflip"
+            android:layout_alignStart="@+id/button_stringflip"
+            android:text="Pig Source " />
+
+    </RelativeLayout>
+</LinearLayout>

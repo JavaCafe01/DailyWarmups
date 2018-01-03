@@ -1,0 +1,94 @@
+/*
+ * Translates the given sentence into Pig Latin.
+ */
+public static String translate(String sentence) {
+
+    String translatedSentence = "";   
+    String currentWord = "";
+   
+    for (int i = 0; i < sentence.length(); i++) {
+        char c = sentence.charAt(i);
+      
+        if (isWordChar(c, i, sentence)) {
+            currentWord += c;
+        }
+       
+        else {
+           
+            if (!currentWord.equals("")) {
+                translatedSentence += translateWord(currentWord);
+                currentWord = "";
+            }
+          
+            translatedSentence += c;
+        }
+    }
+    
+    if (!currentWord.equals("")) {
+        translatedSentence += translateWord(currentWord);
+    }
+
+    return translatedSentence;
+}
+
+
+/*
+ * Translates the given word into Pig Latin.
+ */
+private static String translateWord(String word) {
+   
+    int firstVowel = findFirstVowel(word);
+   
+    if (firstVowel == 0 || firstVowel == -1) {
+        return word + "yay";
+    }
+    
+    else {
+        return word.substring(firstVowel) +
+                word.substring(0, firstVowel) +
+                "ay";
+    }
+}
+
+
+/*
+ * Find and return the position of the first vowel in the given word. If no
+ * vowels are found, returns -1. Y is always treated as a consonant.
+ */
+private static int findFirstVowel(String word) {
+   
+    for (int i = 0; i < word.length(); i++) {
+      
+        char c = word.toLowerCase().charAt(i);
+      
+        if ("aeiou".indexOf(c) != -1) {
+            return i;
+        }
+    }
+
+    return -1;
+}
+
+
+/*
+ * Determines whether the given character, at the given position in the
+ * given sentence, should be treated as part of a word. Returns true if the
+ * character is a letter or if it is a digit or punctuation mark surrounded
+ * by letters (which takes care of contractions, e.g. "can't")
+ */
+private static boolean isWordChar(char c, int position, String sentence) {
+   
+    if (Character.isLetter(c)) {
+        return true;
+    }
+   
+    else if (String.valueOf(c).matches("[\\d\\p{Punct}]")) {
+      
+        if (position > 0 && position < sentence.length() - 1) {
+            return Character.isLetter(sentence.charAt(position - 1)) &&
+                    Character.isLetter(sentence.charAt(position + 1));
+        }
+    }
+   
+    return false;
+}

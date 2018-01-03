@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:hint="String"
+            android:inputType="textNoSuggestions" />
+
+        <Button
+            android:id="@+id/button_revString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/editString"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="28dp"
+            android:text="Reverse String" />
+
+        <Button
+            android:id="@+id/button_clear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button_revString"
+            android:layout_alignLeft="@+id/button_revString"
+            android:layout_alignRight="@+id/button_revString"
+            android:layout_alignStart="@+id/button_revString"
+            android:layout_below="@+id/button_revString"
+            android:layout_marginTop="16dp"
+            android:text="Clear" />
+
+        <TextView
+            android:id="@+id/stringView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_clear2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>
