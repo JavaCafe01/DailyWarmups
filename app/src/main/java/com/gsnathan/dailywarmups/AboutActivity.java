@@ -23,7 +23,7 @@ public class AboutActivity extends AppCompatActivity {
         Element versionElement = new Element();
         versionElement.setTitle("Version 6.0");
         final View aboutPage = new AboutPage(this)
-                .setImage(R.drawable.aboutpic)
+                .setImage(R.drawable.pencil2)
                 .setDescription("An app with simple code activities" + Utils.getEmojiByUnicode(unicode))
                 .addItem(versionElement)
                 .addEmail("gsnathandev@outlook.com", "Contact the Developer")
