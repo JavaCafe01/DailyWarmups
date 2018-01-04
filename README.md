@@ -14,7 +14,7 @@ Daily Warmups is made available under the terms of the [MIT License][mit].
 ```
 MIT License
 
-Copyright (c) 2018 JavaCafe01
+Copyright (c) 2018 Gokul Swaminathan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
