@@ -15,10 +15,9 @@ See the [LICENSE][license] file that accompanies this distribution for the full 
 
 ### Special Thanks
 Andrew da Cunha ([andracmat][user]) for the Knight's Tour
-* [Contact][andrewcontact]
+* Contact him --> andracmat@gmail.com
 
 [mit]: https://opensource.org/licenses/MIT
 [license]: https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE
 [beta]: https://play.google.com/apps/testing/com.gsnathan.dailywarmups
 [user]: https://github.com/andracmat
-[andrewcontact]: andracmat@gmail.com
