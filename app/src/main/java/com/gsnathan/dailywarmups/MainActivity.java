@@ -104,6 +104,26 @@ public class MainActivity extends AppCompatActivity {
                         }
                 );
 
+        findViewById(R.id.button_knight).setOnClickListener
+                (
+                        new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                navToKnight();
+                            }
+                        }
+                );
+
+        findViewById(R.id.button_knightsource).setOnClickListener
+                (
+                        new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                navToKnightSource();
+                            }
+                        }
+                );
+
 
     }
 
@@ -153,6 +173,18 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AboutActivity.class);
         startActivity(intent);
     }
+
+    private void navToKnight() {
+        Intent intent = new Intent(this, KnightActivity.class);
+        startActivity(intent);
+    }
+
+    private void navToKnightSource() {
+        Intent intent = new Intent(this, KnightSourceActivity.class);
+        startActivity(intent);
+    }
+
+
 
 
 }

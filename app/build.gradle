@@ -6,8 +6,8 @@ android {
         applicationId "com.gsnathan.dailywarmups"
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 7
-        versionName "7.0"
+        versionCode 8
+        versionName "8.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:design:26.1.0'
@@ -27,4 +27,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.github.medyo:android-about-page:1.2.2'
+    compile 'com.pusher:pusher-java-client:1.4.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile files('libs/chnutil.jar')
+    compile files('libs/apcslib.jar')
 }

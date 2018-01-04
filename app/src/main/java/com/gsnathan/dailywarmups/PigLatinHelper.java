@@ -4,9 +4,9 @@ package com.gsnathan.dailywarmups;
  * Created by Gokul Swaminathan on 1/3/2018.
  */
 
-public class PigLatin {
+public class PigLatinHelper {
 
-    public PigLatin() {
+    public PigLatinHelper() {
     }
 
 

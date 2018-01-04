@@ -73,8 +73,17 @@ public class Utils {
 
     /* Translate to Piglatin Method */
     public String transToPiglatin(String sentence) {
-        String translation = PigLatin.translate(sentence);
+        String translation = PigLatinHelper.translate(sentence);
         return translation;
+    }
+
+    /* Knight Method */
+    public void knightClient() {
+        KnightHelper knight = new KnightHelper(output);
+        while (!knight.noMoreMoves()) {
+            knight.move();
+        }
+        knight.print();
     }
 
     /* Shows Toast Message */
@@ -86,6 +95,7 @@ public class Utils {
         toast.show();
     }
 
+    /* Get emoji Unicode */
     public static String getEmojiByUnicode(int unicode) {
         return new String(Character.toChars(unicode));
     }

@@ -105,22 +105,22 @@
             android:layout_alignStart="@+id/button_list"
             android:layout_below="@+id/button_list"
             android:layout_marginTop="13dp"
-            android:text="Source" />
+            android:text="Methods Source" />
 
         <Button
             android:id="@+id/button_pigsource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/button_source"
             android:layout_alignBottom="@+id/button_source"
             android:layout_alignEnd="@+id/button_stringflip"
             android:layout_alignLeft="@+id/button_stringflip"
             android:layout_alignRight="@+id/button_stringflip"
             android:layout_alignStart="@+id/button_stringflip"
+            android:layout_alignTop="@+id/button_source"
             android:text="Pig Source " />
 
         <Button
-            android:id="@+id/button_about"
+            android:id="@+id/button_knightsource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/button_pigsource"
@@ -129,7 +129,32 @@
             android:layout_alignStart="@+id/button_pigsource"
             android:layout_below="@+id/button_pigsource"
             android:layout_marginTop="13dp"
+            android:text="Knight Source" />
+
+        <Button
+            android:id="@+id/button_knight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_about"
+            android:layout_alignEnd="@+id/button_source"
+            android:layout_alignLeft="@+id/button_source"
+            android:layout_alignRight="@+id/button_source"
+            android:layout_alignStart="@+id/button_source"
+            android:layout_alignTop="@+id/button_knightsource"
+            android:text="Knight" />
+
+        <Button
+            android:id="@+id/button_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button_knightsource"
+            android:layout_alignLeft="@+id/button_knightsource"
+            android:layout_alignRight="@+id/button_knightsource"
+            android:layout_alignStart="@+id/button_knightsource"
+            android:layout_below="@+id/button_knightsource"
+            android:layout_marginTop="13dp"
             android:text="About" />
+
 
     </RelativeLayout>
 </LinearLayout>
