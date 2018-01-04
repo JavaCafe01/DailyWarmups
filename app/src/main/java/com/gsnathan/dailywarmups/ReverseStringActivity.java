@@ -12,8 +12,7 @@ import android.widget.Toast;
  * Created by Gokul Swaminathan on 1/2/2018.
  */
 
-public class ReverseStringActivity extends AppCompatActivity
-{
+public class ReverseStringActivity extends AppCompatActivity {
 
     private TextView stringOutput;
     private EditText stringInput;
@@ -28,19 +27,14 @@ public class ReverseStringActivity extends AppCompatActivity
 
         findViewById(R.id.button_revString).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
 
-                                try
-                                {
+                                try {
                                     Utils methods = new Utils(stringOutput);
                                     stringOutput.setText(methods.revString(stringInput.getText().toString()));
-                                }
-                                catch(Exception E)
-                                {
+                                } catch (Exception E) {
                                     Context context = getApplicationContext();
                                     Utils.showToast(context, "Error", Toast.LENGTH_SHORT);
                                 }
@@ -50,11 +44,9 @@ public class ReverseStringActivity extends AppCompatActivity
 
         findViewById(R.id.button_clear2).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 stringOutput.setText("");
                                 stringInput.setText("");
                             }

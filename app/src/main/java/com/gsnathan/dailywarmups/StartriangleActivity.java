@@ -12,8 +12,7 @@ import android.widget.Toast;
  * Created by Gokul Swaminathan on 1/2/2018.
  */
 
-public class StartriangleActivity extends AppCompatActivity
-{
+public class StartriangleActivity extends AppCompatActivity {
     private EditText height;
     private TextView output;
 
@@ -27,19 +26,14 @@ public class StartriangleActivity extends AppCompatActivity
 
         findViewById(R.id.button_MakeTri).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
 
-                                try
-                                {
+                                try {
                                     Utils methods = new Utils(output);
                                     methods.makeTri(Integer.parseInt(height.getText().toString()));
-                                }
-                                catch(Exception E)
-                                {
+                                } catch (Exception E) {
                                     Context context = getApplicationContext();
                                     Utils.showToast(context, "Error", Toast.LENGTH_SHORT);
                                 }
@@ -49,11 +43,9 @@ public class StartriangleActivity extends AppCompatActivity
 
         findViewById(R.id.button_clear3).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 output.setText("");
                                 height.setText("");
                             }
@@ -61,11 +53,6 @@ public class StartriangleActivity extends AppCompatActivity
                 );
 
     }
-
-
-
-
-
 
 
 }

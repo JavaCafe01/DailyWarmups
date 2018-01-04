@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,26 +14,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         findViewById(R.id.button_starsquare).setOnClickListener
                 (
-                    new View.OnClickListener()
-                    {
-                        @Override
-                        public void onClick(View v)
-                        {
-                            navToStarsquare();
+                        new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                navToStarsquare();
+                            }
                         }
-                    }
                 );
 
         findViewById(R.id.button_revString).setOnClickListener
                 (
-                    new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 navToRevString();
                             }
                         }
@@ -42,11 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.button_triangle).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 navToStarTriangle();
                             }
                         }
@@ -54,11 +46,9 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.button_piglatin).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 navToPiglatin();
                             }
                         }
@@ -66,11 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.button_list).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 navToList();
                             }
                         }
@@ -78,11 +66,9 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.button_stringflip).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 navToFlip();
                             }
                         }
@@ -90,11 +76,9 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.button_source).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 navToSource();
                             }
                         }
@@ -102,11 +86,9 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.button_pigsource).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 navToPigSource();
                             }
                         }
@@ -114,11 +96,9 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.button_about).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 navToAbout();
                             }
                         }
@@ -128,58 +108,48 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     /* Navigation */
-    private void navToStarsquare()
-    {
+    private void navToStarsquare() {
         Intent intent = new Intent(this, StarsquareActivity.class);
         startActivity(intent);
     }
 
-    private void navToRevString()
-    {
+    private void navToRevString() {
         Intent intent = new Intent(this, ReverseStringActivity.class);
         startActivity(intent);
     }
 
-    private void navToStarTriangle()
-    {
+    private void navToStarTriangle() {
         Intent intent = new Intent(this, StartriangleActivity.class);
         startActivity(intent);
     }
 
-    private void navToPiglatin()
-    {
+    private void navToPiglatin() {
         Intent intent = new Intent(this, PiglatinActivity.class);
         startActivity(intent);
     }
 
-    private void navToList()
-    {
+    private void navToList() {
         Intent intent = new Intent(this, ListActivity.class);
         startActivity(intent);
     }
 
-    private void navToFlip()
-    {
+    private void navToFlip() {
         Intent intent = new Intent(this, FlipHalvesActivity.class);
         startActivity(intent);
     }
 
-    private void navToSource()
-    {
+    private void navToSource() {
         Intent intent = new Intent(this, SourceActivity.class);
         startActivity(intent);
     }
 
-    private void navToPigSource()
-    {
+    private void navToPigSource() {
         Intent intent = new Intent(this, PigSourceActivity.class);
         startActivity(intent);
     }
 
-    private void navToAbout()
-    {
+    private void navToAbout() {
         Intent intent = new Intent(this, AboutActivity.class);
         startActivity(intent);
     }

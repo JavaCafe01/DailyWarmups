@@ -6,14 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 
 /**
  * Created by Gokul Swaminathan on 1/2/2018.
  */
 
-public class ListActivity extends AppCompatActivity
-{
+public class ListActivity extends AppCompatActivity {
 
     private TextView stringOutput;
     private EditText stringInput;
@@ -29,11 +29,9 @@ public class ListActivity extends AppCompatActivity
 
         findViewById(R.id.button_add).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 list.add(stringInput.getText().toString());
                                 stringOutput.setText("" + list);
                             }
@@ -42,11 +40,9 @@ public class ListActivity extends AppCompatActivity
 
         findViewById(R.id.button_clear5).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 list.clear();
                                 stringInput.setText("");
                                 stringOutput.setText("" + list);

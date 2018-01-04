@@ -12,8 +12,7 @@ import android.widget.Toast;
  * Created by Gokul Swaminathan on 1/2/2018.
  */
 
-public class PiglatinActivity extends AppCompatActivity
-{
+public class PiglatinActivity extends AppCompatActivity {
     private TextView stringOutput;
     private EditText stringInput;
 
@@ -27,19 +26,14 @@ public class PiglatinActivity extends AppCompatActivity
 
         findViewById(R.id.button_Trans).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
 
-                                try
-                                {
+                                try {
                                     Utils methods = new Utils(stringOutput);
                                     stringOutput.setText(methods.transToPiglatin(stringInput.getText().toString()));
-                                }
-                                catch(Exception E)
-                                {
+                                } catch (Exception E) {
                                     Context context = getApplicationContext();
                                     Utils.showToast(context, "Error", Toast.LENGTH_SHORT);
                                 }
@@ -49,11 +43,9 @@ public class PiglatinActivity extends AppCompatActivity
 
         findViewById(R.id.button_clear4).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 stringOutput.setText("");
                                 stringInput.setText("");
                             }

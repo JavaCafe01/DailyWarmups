@@ -21,9 +21,8 @@ public class AboutActivity extends AppCompatActivity {
         int unicode = 0x1F60A;
 
         Element versionElement = new Element();
-        versionElement.setTitle("Version 5.0");
+        versionElement.setTitle("Version 6.0");
         final View aboutPage = new AboutPage(this)
-                .isRTL(false)
                 .setImage(R.drawable.aboutpic)
                 .setDescription("An app with simple code activities" + Utils.getEmojiByUnicode(unicode))
                 .addItem(versionElement)

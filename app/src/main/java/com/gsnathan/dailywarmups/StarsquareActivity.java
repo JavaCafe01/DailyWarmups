@@ -12,12 +12,10 @@ import android.widget.Toast;
  * Created by Gokul Swaminathan on 1/1/2018.
  */
 
-public class StarsquareActivity extends AppCompatActivity
-{
+public class StarsquareActivity extends AppCompatActivity {
 
     private EditText size;
     private TextView output;
-
 
 
     @Override
@@ -30,18 +28,13 @@ public class StarsquareActivity extends AppCompatActivity
 
         findViewById(R.id.button_MakeTable).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
-                                try
-                                {
+                            public void onClick(View v) {
+                                try {
                                     Utils methods = new Utils(output);
                                     methods.makeSquare(Integer.parseInt(size.getText().toString()));
-                                }
-                                catch(Exception E)
-                                {
+                                } catch (Exception E) {
                                     Context context = getApplicationContext();
                                     Utils.showToast(context, "Error", Toast.LENGTH_SHORT);
                                 }
@@ -51,11 +44,9 @@ public class StarsquareActivity extends AppCompatActivity
 
         findViewById(R.id.button_clear).setOnClickListener
                 (
-                        new View.OnClickListener()
-                        {
+                        new View.OnClickListener() {
                             @Override
-                            public void onClick(View v)
-                            {
+                            public void onClick(View v) {
                                 output.setText("");
                                 size.setText("");
                             }

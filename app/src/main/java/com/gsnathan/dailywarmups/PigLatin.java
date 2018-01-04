@@ -6,8 +6,8 @@ package com.gsnathan.dailywarmups;
 
 public class PigLatin {
 
-   public PigLatin()
-   {}
+    public PigLatin() {
+    }
 
 
     /*
