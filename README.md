@@ -1,7 +1,8 @@
 # Daily Warmups
 
 ### Download
-[![Play Store](http://developer.android.com/images/brand/en_generic_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups&hl=en)
+<a href='https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="250" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
 
 ### Contribute
 You can contribute to this project in many ways:
@@ -11,8 +12,12 @@ You can contribute to this project in many ways:
 ### License
 Daily Warmups is made available under the terms of the [MIT License][mit].
 
-See the [LICENSE][license] file that accompanies this distribution for the full text of the license.
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE)
+
+### Special Thanks
+Andrew da Cunha ([andracmat][user]) for the Knight's Tour
+* Contact him --> andracmat@gmail.com
 
 [mit]: https://opensource.org/licenses/MIT
-[license]: https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE
 [beta]: https://play.google.com/apps/testing/com.gsnathan.dailywarmups
+[user]: https://github.com/andracmat
