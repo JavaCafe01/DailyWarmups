@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.codemybrainsout.ratingdialog.RatingDialog;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -124,6 +126,16 @@ public class MainActivity extends AppCompatActivity {
                         }
                 );
 
+        findViewById(R.id.button_rate).setOnClickListener
+                (
+                        new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                showRatingDialogue();
+                            }
+                        }
+                );
+
 
     }
 
@@ -184,7 +196,21 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void showRatingDialogue() {
+        final RatingDialog ratingDialog = new RatingDialog.Builder(this)
+                .title("Would you like to rate?")
+                .titleTextColor(R.color.black)
+                .positiveButtonText("Not Now")
+                .negativeButtonText("Never")
+                .positiveButtonTextColor(R.color.colorBlueAccent)
+                .negativeButtonTextColor(R.color.colorBlueAccent)
+                .ratingBarColor(R.color.yellow)
+                .playstoreUrl("https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups")
+                .build();
 
+        ratingDialog.show();
+
+    }
 
 
 }

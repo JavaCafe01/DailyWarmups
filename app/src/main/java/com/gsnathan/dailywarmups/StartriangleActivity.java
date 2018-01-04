@@ -29,12 +29,16 @@ public class StartriangleActivity extends AppCompatActivity {
                         new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-
+                                int starheight = Integer.parseInt(height.getText().toString());
+                                Context context = getApplicationContext();
                                 try {
                                     Utils methods = new Utils(output);
-                                    methods.makeTri(Integer.parseInt(height.getText().toString()));
+                                    if (starheight > 100) {
+                                        Utils.showToast(context, "Size must be less than 100", Toast.LENGTH_SHORT);
+                                    } else {
+                                        methods.makeTri(starheight);
+                                    }
                                 } catch (Exception E) {
-                                    Context context = getApplicationContext();
                                     Utils.showToast(context, "Error", Toast.LENGTH_SHORT);
                                 }
                             }

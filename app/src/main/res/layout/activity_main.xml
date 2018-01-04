@@ -155,6 +155,19 @@
             android:layout_marginTop="13dp"
             android:text="About" />
 
+        <Button
+            android:id="@+id/button_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_about"
+            android:layout_alignBottom="@+id/button_about"
+            android:layout_alignEnd="@+id/button_knight"
+            android:layout_alignLeft="@+id/button_knight"
+            android:layout_alignRight="@+id/button_knight"
+            android:layout_alignStart="@+id/button_knight"
+            android:text="Rate"
+            android:visibility="gone" />
+
 
     </RelativeLayout>
 </LinearLayout>

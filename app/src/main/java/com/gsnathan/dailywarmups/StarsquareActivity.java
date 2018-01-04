@@ -17,7 +17,6 @@ public class StarsquareActivity extends AppCompatActivity {
     private EditText size;
     private TextView output;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,11 +30,17 @@ public class StarsquareActivity extends AppCompatActivity {
                         new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
+                                int starsize = Integer.parseInt(size.getText().toString());
+                                Context context = getApplicationContext();
                                 try {
                                     Utils methods = new Utils(output);
-                                    methods.makeSquare(Integer.parseInt(size.getText().toString()));
+                                    if (starsize > 100) {
+                                        Utils.showToast(context, "Size must be less than 100", Toast.LENGTH_SHORT);
+                                    } else {
+                                        methods.makeSquare(starsize);
+                                    }
                                 } catch (Exception E) {
-                                    Context context = getApplicationContext();
+
                                     Utils.showToast(context, "Error", Toast.LENGTH_SHORT);
                                 }
                             }

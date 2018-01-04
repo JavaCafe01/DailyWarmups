@@ -4,11 +4,12 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.gsnathan.dailywarmups"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 26
-        versionCode 8
-        versionName "8.0"
+        versionCode 10
+        versionName "9.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -29,6 +30,5 @@ dependencies {
     compile 'com.github.medyo:android-about-page:1.2.2'
     compile 'com.pusher:pusher-java-client:1.4.0'
     compile 'com.google.code.gson:gson:2.8.0'
-    compile files('libs/chnutil.jar')
-    compile files('libs/apcslib.jar')
+    compile 'com.codemybrainsout.rating:ratingdialog:1.0.8'
 }

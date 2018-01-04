@@ -7,20 +7,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button_moveKnight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="24dp"
-            android:text="Move Knight" />
 
         <HorizontalScrollView
+            android:id="@+id/viewmoveKnight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/button_moveKnight"
-            android:layout_centerHorizontal="true">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -34,6 +27,15 @@
 
             </LinearLayout>
         </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/button_moveKnight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="79dp"
+            android:text="Move Knight" />
     </RelativeLayout>
 
 </LinearLayout>

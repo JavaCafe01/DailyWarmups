@@ -1,7 +1,9 @@
 package com.gsnathan.dailywarmups;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 
 import mehdi.sakout.aboutpage.AboutPage;
@@ -16,12 +18,13 @@ public class AboutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        simulateDayNight(/* DAY */ 0);
 
         //smiley emoji
         int unicode = 0x1F60A;
 
         Element versionElement = new Element();
-        versionElement.setTitle("Version 8.0");
+        versionElement.setTitle("Version 9.0");
 
         Element andrewHelp = new Element();
         andrewHelp.setTitle("Thanks to Andrew da Cunha for Knights Tour");
@@ -39,6 +42,26 @@ public class AboutActivity extends AppCompatActivity {
                 .create();
 
         setContentView(aboutPage);
+    }
+
+
+    void simulateDayNight(int currentSetting) {
+        final int DAY = 0;
+        final int NIGHT = 1;
+        final int FOLLOW_SYSTEM = 3;
+
+        int currentNightMode = getResources().getConfiguration().uiMode
+                & Configuration.UI_MODE_NIGHT_MASK;
+        if (currentSetting == DAY && currentNightMode != Configuration.UI_MODE_NIGHT_NO) {
+            AppCompatDelegate.setDefaultNightMode(
+                    AppCompatDelegate.MODE_NIGHT_NO);
+        } else if (currentSetting == NIGHT && currentNightMode != Configuration.UI_MODE_NIGHT_YES) {
+            AppCompatDelegate.setDefaultNightMode(
+                    AppCompatDelegate.MODE_NIGHT_YES);
+        } else if (currentSetting == FOLLOW_SYSTEM) {
+            AppCompatDelegate.setDefaultNightMode(
+                    AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+        }
     }
 
 
