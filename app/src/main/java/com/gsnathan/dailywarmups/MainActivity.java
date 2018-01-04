@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         findViewById(R.id.button_starsquare).setOnClickListener
                 (
@@ -111,6 +112,18 @@ public class MainActivity extends AppCompatActivity {
                         }
                 );
 
+        findViewById(R.id.button_about).setOnClickListener
+                (
+                        new View.OnClickListener()
+                        {
+                            @Override
+                            public void onClick(View v)
+                            {
+                                navToAbout();
+                            }
+                        }
+                );
+
 
     }
 
@@ -164,4 +177,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PigSourceActivity.class);
         startActivity(intent);
     }
+
+    private void navToAbout()
+    {
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+    }
+
+
 }

@@ -6,8 +6,8 @@ android {
         applicationId "com.gsnathan.dailywarmups"
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 4
-        versionName "4.0"
+        versionCode 5
+        versionName "5.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -26,4 +26,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.github.medyo:android-about-page:1.2.2'
 }
