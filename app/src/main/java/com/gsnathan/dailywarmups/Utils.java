@@ -100,4 +100,9 @@ public class Utils
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }
+
+    public static String getEmojiByUnicode(int unicode)
+    {
+        return new String(Character.toChars(unicode));
+    }
 }

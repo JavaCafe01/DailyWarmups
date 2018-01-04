@@ -17,12 +17,15 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //smiley emoji
+        int unicode = 0x1F60A;
+
         Element versionElement = new Element();
         versionElement.setTitle("Version 5.0");
         final View aboutPage = new AboutPage(this)
                 .isRTL(false)
                 .setImage(R.drawable.aboutpic)
-                .setDescription("Hi bob")
+                .setDescription("An app with simple code activities" + Utils.getEmojiByUnicode(unicode))
                 .addItem(versionElement)
                 .addEmail("gsnathandev@outlook.com", "Contact the Developer")
                 .addPlayStore("com.gsnathan.dailywarmups", "Find this app on the PlayStore")
@@ -31,4 +34,6 @@ public class AboutActivity extends AppCompatActivity {
 
         setContentView(aboutPage);
     }
+
+
 }
