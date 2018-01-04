@@ -13,6 +13,10 @@ Daily Warmups is made available under the terms of the [MIT License][mit].
 
 See the [LICENSE][license] file that accompanies this distribution for the full text of the license.
 
+### Special Thanks
+Andrew da Cunha (andracmat@gmail.com)([andracmat][user]) for the Knight's Tour
+
 [mit]: https://opensource.org/licenses/MIT
 [license]: https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE
 [beta]: https://play.google.com/apps/testing/com.gsnathan.dailywarmups
+[user]: https://github.com/andracmat
