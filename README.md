@@ -1,5 +1,8 @@
 # Daily Warmups
 
+<img src ="./gifs/gifknight.gif" width="180" height="320"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img src ="./gifs/gifsquare.gif" width="180" height="320"/>
+
 ### Download
 <a href='https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="250" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
 
