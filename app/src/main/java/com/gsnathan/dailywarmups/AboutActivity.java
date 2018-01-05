@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 
+import com.vansuita.materialabout.builder.AboutBuilder;
+import com.vansuita.materialabout.views.AboutView;
+
 import mehdi.sakout.aboutpage.AboutPage;
 import mehdi.sakout.aboutpage.Element;
 
@@ -18,6 +21,40 @@ public class AboutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        materialAboutPage();
+    }
+
+    private void materialAboutPage(){
+        AboutView view = AboutBuilder.with(this)
+
+                .setPhoto(R.drawable.profile)
+                .setCover(R.drawable.profileback)
+                .setName("Gokul Swaminathan")
+                .setSubTitle("Mobile Developer")
+                .setBrief("Special Thanks to Andrew da Cunha for Knight's Tour")
+                .setAppIcon(R.mipmap.ic_launcher)
+                .setAppName(R.string.app_name)
+                .addGooglePlayStoreLink("https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups&hl=en")
+                .addGitHubLink("JavaCafe01")
+                .addInstagramLink("gokul.swami")
+                .addWhatsappLink("Gokul Swami", "+8584136030")
+                .addEmailLink("gokulswami@live.com")
+                .setVersionNameAsAppSubTitle()
+                .addFiveStarsAction()
+                .addShareAction(R.string.app_name)
+                .addUpdateAction()
+                .addFeedbackAction("gsnathandev@outlook.com")
+                .setWrapScrollView(false)
+                .setLinksAnimated(true)
+                .setShowAsCard(false)
+                .build();
+
+        setContentView(view);
+    }
+
+    private void aboutPage()
+    {
         simulateDayNight(/* DAY */ 0);
 
         //smiley emoji
@@ -42,6 +79,7 @@ public class AboutActivity extends AppCompatActivity {
                 .create();
 
         setContentView(aboutPage);
+
     }
 
 

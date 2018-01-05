@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gsnathan.dailywarmups"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gsnathan.dailywarmups">
 
     <application
         android:allowBackup="true"
@@ -12,127 +12,145 @@
         android:theme="@style/AppTheme">
 
         <!-- Main Page -->
-        <activity android:name=".MainActivity">
+        <activity android:name=".LayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <!-- Star Square Page -->
-        <activity android:name=".StarsquareActivity"
+        <activity
+            android:name=".StarsquareActivity"
             android:label="Star Square"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
 
         <!-- Reverse String Page -->
-        <activity android:name=".ReverseStringActivity"
+        <activity
+            android:name=".ReverseStringActivity"
             android:label="Reverse String"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
 
         <!-- Star Triangle Page -->
-        <activity android:name=".StartriangleActivity"
+        <activity
+            android:name=".StartriangleActivity"
             android:label="Star Triangle"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
 
         <!-- Pig Latin Page -->
-        <activity android:name=".PiglatinActivity"
+        <activity
+            android:name=".PiglatinActivity"
             android:label="Pig Latin Translator"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
 
         <!-- ArrayList Page -->
-        <activity android:name=".ListActivity"
+        <activity
+            android:name=".ListActivity"
             android:label="ArrayList"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
 
         <!-- Flip Halves Page -->
-        <activity android:name=".FlipHalvesActivity"
+        <activity
+            android:name=".FlipHalvesActivity"
             android:label="Flip Halves"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
 
         <!-- Source -->
-        <activity android:name=".SourceActivity"
+        <activity
+            android:name=".SourceActivity"
             android:label="Methods Source Code"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
 
         <!-- Source -->
-        <activity android:name=".PigSourceActivity"
+        <activity
+            android:name=".PigSourceActivity"
             android:label="Pig Latin Source Code"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
 
         <!-- About -->
-        <activity android:name=".AboutActivity"
-            android:label="About"
-            android:parentActivityName=".MainActivity" >
+        <activity
+            android:name=".AboutActivity"
+            android:label="About Daily Warmups"
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
 
         <!-- Knight -->
-        <activity android:name=".KnightActivity"
+        <activity
+            android:name=".KnightActivity"
             android:label="Knight's Tour"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
 
         <!-- KnightSource -->
-        <activity android:name=".KnightSourceActivity"
+        <activity
+            android:name=".KnightSourceActivity"
             android:label="Knight's Tour Source Code"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".LayoutActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LayoutActivity" />
         </activity>
-
-        
-
     </application>
-
-
 
 </manifest>
