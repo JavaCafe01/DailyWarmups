@@ -17,9 +17,10 @@ Daily Warmups is made available under the terms of the [MIT License][mit].
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE)
 
-### Special Thanks
-Andrew da Cunha ([andracmat][user]) for the Knight's Tour
-* Contact him --> andracmat@gmail.com
+### Credits
+|[Andrew da Cunha][user] for the Knight's Tour|
+|:-------------------------------------------:|
+|Contact him --> andracmat@gmail.com|
 
 [mit]: https://opensource.org/licenses/MIT
 [beta]: https://play.google.com/apps/testing/com.gsnathan.dailywarmups
