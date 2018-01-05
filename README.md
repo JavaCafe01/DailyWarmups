@@ -2,16 +2,16 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE) [![author](https://img.shields.io/badge/author-Gokul%20Swaminathan-lightgrey.svg?style=flat-square)](https://github.com/JavaCafe01) [![platform](https://img.shields.io/badge/platform-Android-green.svg?style=flat-square)](https://www.android.com/)
 
+### Download
+
+<a href='https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="250" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
 ### Screencaptures
 
 | Knight's Tour | Star Square |
 |:-:|:-:|
 | <img src ="./gifs/gifknight.gif" width="180" height="320"/> | <img src ="./gifs/gifsquare.gif" width="180" height="320"/> |
 | [`KnightHelper.java`](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/java/com/gsnathan/dailywarmups/KnightHelper.java) | [`Utils.java`](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/java/com/gsnathan/dailywarmups/Utils.java) | 
-
-### Download
-
-<a href='https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="250" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
 
 ### Contribute
 
