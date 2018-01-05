@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editIdea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Any new ideas?"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <EditText
+        android:id="@+id/editWhy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editIdea"
+        android:layout_alignStart="@+id/editIdea"
+        android:layout_below="@+id/editIdea"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Why do you want these ideas?"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <EditText
+        android:id="@+id/editComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editWhy"
+        android:layout_alignStart="@+id/editWhy"
+        android:layout_below="@+id/editWhy"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Extra Comments?"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <Button
+        android:id="@+id/submitForum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editComments"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:fontFamily="sans-serif"
+        android:text="Submit" />
+</RelativeLayout>

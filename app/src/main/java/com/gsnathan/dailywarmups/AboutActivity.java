@@ -1,11 +1,14 @@
 package com.gsnathan.dailywarmups;
 
+import android.content.Intent;
 import android.content.res.Configuration;
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 
+import com.mikepenz.aboutlibraries.Libs;import com.mikepenz.aboutlibraries.LibsBuilder;
 import com.vansuita.materialabout.builder.AboutBuilder;
 import com.vansuita.materialabout.views.AboutView;
 
@@ -16,16 +19,21 @@ import mehdi.sakout.aboutpage.Element;
  * Created by Gokul Swaminathan on 1/3/2018.
  */
 
-public class AboutActivity extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         materialAboutPage();
     }
 
     private void materialAboutPage(){
+        LibsBuilder builder = new LibsBuilder()
+                //provide a style (optional) (LIGHT, DARK, LIGHT_DARK_TOOLBAR)
+                .withActivityStyle(Libs.ActivityStyle.LIGHT_DARK_TOOLBAR)
+        ;
+
+
         AboutView view = AboutBuilder.with(this)
 
                 .setPhoto(R.drawable.profile)
@@ -35,28 +43,39 @@ public class AboutActivity extends AppCompatActivity {
                 .setBrief("Special Thanks to Andrew da Cunha for Knight's Tour")
                 .setAppIcon(R.mipmap.ic_launcher)
                 .setAppName(R.string.app_name)
-                .addGooglePlayStoreLink("https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups&hl=en")
                 .addGitHubLink("JavaCafe01")
                 .addInstagramLink("gokul.swami")
-                .addWhatsappLink("Gokul Swami", "+8584136030")
+                .addWhatsappLink("Gokul Swami", "+18584136030")
                 .addEmailLink("gokulswami@live.com")
+                .addSkypeLink("+18584136030")
                 .setVersionNameAsAppSubTitle()
-                .addFiveStarsAction()
+                .addAction(R.drawable.sourcecode, "Source Code", "https://github.com/JavaCafe01/DailyWarmups")
                 .addShareAction(R.string.app_name)
                 .addUpdateAction()
-                .addFeedbackAction("gsnathandev@outlook.com")
-                .setWrapScrollView(false)
+                //.addFeedbackAction("gsnathandev@outlook.com")
+                .addAction(R.drawable.forum,"Feedback", navToForum())
+                //.addLicenseAction("Licenses",)
+                .addAction(R.drawable.sourcelicenses,"Open Source Licenses", /*new Intent(this, OssLicensesMenuActivity.class)*/ builder.intent(this))
+                .addAction(R.drawable.beta, "Beta test this app", "https://play.google.com/apps/testing/com.gsnathan.dailywarmups")
+                //.addFiveStarsAction()
+                .setWrapScrollView(true)
                 .setLinksAnimated(true)
-                .setShowAsCard(false)
+                .setShowAsCard(true)
                 .build();
 
         setContentView(view);
     }
 
+    private Intent navToForum()
+    {
+        Intent feedIntent = new Intent(this, ForumActivity.class);
+        return feedIntent;
+    }
+
+
     private void aboutPage()
     {
         simulateDayNight(/* DAY */ 0);
-
         //smiley emoji
         int unicode = 0x1F60A;
 

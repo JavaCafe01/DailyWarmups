@@ -7,4 +7,5 @@
     <color name="colorDarkBlue">#245e87</color>
     <color name="colorBlueAccent">#51aeef</color>
     <color name="yellow">#ffe30f</color>
+    <color name="transparent">#00000000</color>
 </resources>

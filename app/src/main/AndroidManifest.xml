@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.gsnathan.dailywarmups">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -144,6 +146,18 @@
         <activity
             android:name=".KnightSourceActivity"
             android:label="Knight's Tour Source Code"
+            android:parentActivityName=".LayoutActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LayoutActivity" />
+        </activity>
+
+        <!-- Forum -->
+        <activity
+            android:name=".ForumActivity"
+            android:label="Feedback"
             android:parentActivityName=".LayoutActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
