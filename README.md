@@ -8,10 +8,10 @@
 
 ### Screencaptures
 
-| Knight's Tour | Star Square |
+| Pig Latin Translator | Pig Latin Source Code |
 |:-:|:-:|
-| <img src ="./gifs/gifknight.gif" width="180" height="320"/> | <img src ="./gifs/gifsquare.gif" width="180" height="320"/> |
-| [`KnightHelper.java`](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/java/com/gsnathan/dailywarmups/KnightHelper.java) | [`Utils.java`](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/java/com/gsnathan/dailywarmups/Utils.java) | 
+| <img src ="./screenshots/device_2.png" width="180" height="360"/> | <img src ="./screenshots/device_3.png" width="180" height="360"/> |
+| [`PigLatinHelper.java`](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/java/com/gsnathan/dailywarmups/PigLatinHelper.java) | [`PigSourceAtivity.java`](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/java/com/gsnathan/dailywarmups/PigSourceAtivity.java) | 
 
 ### Contribute
 
