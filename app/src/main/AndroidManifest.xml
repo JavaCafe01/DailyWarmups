@@ -169,7 +169,7 @@
         <!-- Ascii -->
         <activity
             android:name=".AsciiActivity"
-            android:label="7-bit Ascii Table"
+            android:label="Ascii Table"
             android:parentActivityName=".LayoutActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->

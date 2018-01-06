@@ -158,7 +158,7 @@ public class LayoutActivity extends AppCompatActivity {
                 "Thanks to Andrew da Cunha");
         results.add(9, obj9);
 
-        DataObject obj10 = new DataObject("7-bit Ascii Table",
+        DataObject obj10 = new DataObject("Ascii Table",
                 "");
         results.add(10, obj10);
 
