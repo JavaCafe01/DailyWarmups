@@ -121,7 +121,7 @@
         <!-- About -->
         <activity
             android:name=".AboutActivity"
-            android:label="About Daily Warmups"
+            android:label="About Daily Warmups (Alpha)"
             android:parentActivityName=".LayoutActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -158,6 +158,18 @@
         <activity
             android:name=".ForumActivity"
             android:label="Feedback"
+            android:parentActivityName=".LayoutActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LayoutActivity" />
+        </activity>
+
+        <!-- Ascii -->
+        <activity
+            android:name=".AsciiActivity"
+            android:label="7-bit Ascii Table"
             android:parentActivityName=".LayoutActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->

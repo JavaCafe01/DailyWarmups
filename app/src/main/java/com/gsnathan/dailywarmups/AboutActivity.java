@@ -8,7 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 
-import com.mikepenz.aboutlibraries.Libs;import com.mikepenz.aboutlibraries.LibsBuilder;
+import com.mikepenz.aboutlibraries.Libs;
+import com.mikepenz.aboutlibraries.LibsBuilder;
 import com.vansuita.materialabout.builder.AboutBuilder;
 import com.vansuita.materialabout.views.AboutView;
 
@@ -36,13 +37,13 @@ public class AboutActivity extends AppCompatActivity  {
 
         AboutView view = AboutBuilder.with(this)
 
+                .setAppIcon(R.mipmap.ic_launcher)
+                .setAppName(R.string.app_name)
                 .setPhoto(R.drawable.profile)
                 .setCover(R.drawable.profileback)
                 .setName("Gokul Swaminathan")
                 .setSubTitle("Mobile Developer")
                 .setBrief("Special Thanks to Andrew da Cunha for Knight's Tour")
-                .setAppIcon(R.mipmap.ic_launcher)
-                .setAppName(R.string.app_name)
                 .addGitHubLink("JavaCafe01")
                 .addInstagramLink("gokul.swami")
                 .addWhatsappLink("Gokul Swami", "+18584136030")
@@ -56,8 +57,8 @@ public class AboutActivity extends AppCompatActivity  {
                 .addAction(R.drawable.forum,"Feedback", navToForum())
                 //.addLicenseAction("Licenses",)
                 .addAction(R.drawable.sourcelicenses,"Open Source Licenses", /*new Intent(this, OssLicensesMenuActivity.class)*/ builder.intent(this))
-                .addAction(R.drawable.beta, "Beta test this app", "https://play.google.com/apps/testing/com.gsnathan.dailywarmups")
-                //.addFiveStarsAction()
+                //.addAction(R.drawable.alpha, "Alpha test this app", "https://play.google.com/apps/testing/com.gsnathan.dailywarmups")
+                .addFiveStarsAction()
                 .setWrapScrollView(true)
                 .setLinksAnimated(true)
                 .setShowAsCard(true)

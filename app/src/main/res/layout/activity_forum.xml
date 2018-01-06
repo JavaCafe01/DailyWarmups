@@ -56,6 +56,6 @@
         android:layout_below="@+id/editComments"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="81dp"
-        android:fontFamily="sans-serif"
+        android:fontFamily="casual"
         android:text="Submit" />
 </RelativeLayout>

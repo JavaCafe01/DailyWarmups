@@ -23,7 +23,10 @@
                 <TextView
                     android:id="@+id/textKnight"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="14dp" />
 
             </LinearLayout>
         </HorizontalScrollView>
@@ -35,6 +38,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="79dp"
+            android:fontFamily="casual"
             android:text="Move Knight" />
     </RelativeLayout>
 

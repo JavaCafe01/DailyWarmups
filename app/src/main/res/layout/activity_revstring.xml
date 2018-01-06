@@ -15,9 +15,14 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="21dp"
+            android:layout_toLeftOf="@+id/button_revString"
+            android:layout_toStartOf="@+id/button_revString"
+            android:backgroundTint="@color/transparent"
             android:ems="10"
+            android:fontFamily="casual"
             android:hint="String"
-            android:inputType="textNoSuggestions" />
+            android:inputType="textNoSuggestions"
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/button_revString"
@@ -28,6 +33,7 @@
             android:layout_alignTop="@+id/editString"
             android:layout_marginEnd="24dp"
             android:layout_marginRight="28dp"
+            android:fontFamily="casual"
             android:text="Reverse String" />
 
         <Button
@@ -40,6 +46,7 @@
             android:layout_alignStart="@+id/button_revString"
             android:layout_below="@+id/button_revString"
             android:layout_marginTop="16dp"
+            android:fontFamily="casual"
             android:text="Clear" />
 
         <TextView
@@ -49,6 +56,8 @@
             android:layout_below="@+id/button_clear2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="23dp"
-            android:textSize="14sp" />
+            android:fontFamily="casual"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp" />
     </RelativeLayout>
 </LinearLayout>

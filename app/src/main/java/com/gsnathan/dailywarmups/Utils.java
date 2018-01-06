@@ -19,18 +19,21 @@ public class Utils {
     public void makeTri(int heightWidth) {
         String space = " ";
         String star = "*";
-        int counter = 0;
+        int counter = 1;
 
         output.append("\n");
         for (int lineNum = 0; lineNum < heightWidth - 1; lineNum++) {
             output.append(star);
 
             if (lineNum > 1) {
+                for(int x = 0; x < counter; x ++)
+                output.append(space);
+
                 counter++;
             }
-            for (int c = 0; c < lineNum + counter; c++) {
+            for (int c = 0; c < lineNum; c++) {
                 //Recently changed
-                output.append(space + space);
+                output.append(space + space + space  + space);
             }
             if (lineNum != 0) {
                 output.append(star);
@@ -38,9 +41,9 @@ public class Utils {
             output.append("\n");
         }
 
-        for (int i = 0; i < heightWidth; i++) {
+        for (int i = 0; i < heightWidth + 1; i++) {
             //Recently changed
-            output.append(star + space + space);
+            output.append(star + space + space + space);
         }
     }
 

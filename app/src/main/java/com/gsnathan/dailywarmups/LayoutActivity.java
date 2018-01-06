@@ -97,11 +97,13 @@ public class LayoutActivity extends AppCompatActivity {
                                                                                           startActivity(intent9);
                                                                                           break;
                                                                                       case 10:
-                                                                                          Intent intent10 = new Intent(getApplicationContext(), AboutActivity.class);
+                                                                                          Intent intent10 = new Intent(getApplicationContext(), AsciiActivity.class);
                                                                                           startActivity(intent10);
-                                                                                          ;
                                                                                           break;
-
+                                                                                      case 11:
+                                                                                          Intent intent11 = new Intent(getApplicationContext(), AboutActivity.class);
+                                                                                          startActivity(intent11);
+                                                                                          break;
                                                                                       default:
                                                                                           Context context = getApplicationContext();
                                                                                           Utils.showToast(context, "Error", Toast.LENGTH_SHORT);
@@ -156,9 +158,13 @@ public class LayoutActivity extends AppCompatActivity {
                 "Thanks to Andrew da Cunha");
         results.add(9, obj9);
 
-        DataObject obj10 = new DataObject("About Daily Warmups",
+        DataObject obj10 = new DataObject("7-bit Ascii Table",
                 "");
         results.add(10, obj10);
+
+        DataObject obj11 = new DataObject("About Daily Warmups (Alpha)",
+                "");
+        results.add(11, obj11);
 
         return results;
     }
