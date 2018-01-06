@@ -16,7 +16,7 @@
 ### Contribute
 
 You can contribute to this project in many ways:
-* Become a [Beta Tester][beta]
+* Become an [Alpha Tester][beta]
 * Help to translate the application (if so contact me --> gsnathandev@outlookcom)
 
 ### License
