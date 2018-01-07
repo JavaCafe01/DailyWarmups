@@ -169,7 +169,7 @@
         <!-- Ascii -->
         <activity
             android:name=".AsciiActivity"
-            android:label="Ascii Table"
+            android:label="Character Map"
             android:parentActivityName=".LayoutActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -177,6 +177,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LayoutActivity" />
         </activity>
+
+
     </application>
 
 </manifest>
