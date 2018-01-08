@@ -6,8 +6,8 @@ android {
         applicationId "com.gsnathan.dailywarmups"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 18
-        versionName "12"
+        versionCode 21
+        versionName "12.01-alpha"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }

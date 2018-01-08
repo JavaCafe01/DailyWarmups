@@ -121,7 +121,7 @@
         <!-- About -->
         <activity
             android:name=".AboutActivity"
-            android:label="About Daily Warmups (Alpha)"
+            android:label="About Daily Warmups (alpha)"
             android:parentActivityName=".LayoutActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->

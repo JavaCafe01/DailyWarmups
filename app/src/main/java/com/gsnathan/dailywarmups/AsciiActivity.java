@@ -28,25 +28,6 @@ public class AsciiActivity   extends AppCompatActivity{
         private Dialog dialog;
         private int page;
 
-        @Override
-        protected void onStop() {
-            super.onStop();
-
-            savePreferences();
-        }
-
-        public void savePreferences() {
-            SharedPreferences settings = getPreferences(MODE_PRIVATE);
-            SharedPreferences.Editor editor = settings.edit();
-            editor.putBoolean("batchMode", batchMode);
-            editor.putInt("page", page);
-            editor.commit();
-        }
-
-
-
-
-
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -54,10 +35,6 @@ public class AsciiActivity   extends AppCompatActivity{
             setContentView(R.layout.activity_ascii);
 
 
-            // Restore preferences
-            SharedPreferences settings = getPreferences(MODE_PRIVATE);
-            batchMode = settings.getBoolean("batchMode", false);
-            page = settings.getInt("page", 0);
 
             // Do the GUI stuff
             Spinner sectionSpinner = (Spinner) findViewById(R.id.sectionSpinner);

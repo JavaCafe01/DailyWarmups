@@ -152,7 +152,7 @@ public class AboutActivity extends AppCompatActivity  {
                 .addItem(open)
                 .addItem(andrewHelp)
                 .addEmail("andracmat@gmail.com", "Contact Andrew")
-                .addItem(alpha)
+                //.addItem(alpha)
                 .addItem(licenses)
                 .addItem(feed)
                 .create();

@@ -162,7 +162,7 @@ public class LayoutActivity extends AppCompatActivity {
                 "");
         results.add(10, obj10);
 
-        DataObject obj11 = new DataObject("About Daily Warmups (Alpha)",
+        DataObject obj11 = new DataObject("About Daily Warmups (alpha)",
                 "");
         results.add(11, obj11);
 
