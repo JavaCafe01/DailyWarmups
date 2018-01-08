@@ -93,6 +93,12 @@ public class AboutActivity extends AppCompatActivity  {
         return browserIntent;
     }
 
+    private  Intent navToTele()
+    {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://telegram.me/dailywarmups"));
+        return browserIntent;
+    }
+
 
 
 
@@ -140,6 +146,11 @@ public class AboutActivity extends AppCompatActivity  {
         feed.setIconDrawable(R.drawable.forum);
         feed.setIntent( navToForum());
 
+        Element telegram = new Element();
+        telegram.setTitle("Follow the official changelog chat");
+        telegram.setIconDrawable(R.drawable.telegram);
+        telegram.setIntent( navToTele());
+
 
         final View aboutPage = new AboutPage(this)
                 .setImage(R.drawable.abouticon)
@@ -153,6 +164,7 @@ public class AboutActivity extends AppCompatActivity  {
                 .addItem(andrewHelp)
                 .addEmail("andracmat@gmail.com", "Contact Andrew")
                 //.addItem(alpha)
+                .addItem(telegram)
                 .addItem(licenses)
                 .addItem(feed)
                 .create();
