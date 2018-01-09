@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.gsnathan.dailywarmups">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -133,7 +133,7 @@
         <!-- Knight -->
         <activity
             android:name=".KnightActivity"
-            android:label="Knight's Tour"
+            android:label="Knight&apos;s Tour"
             android:parentActivityName=".LayoutActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -145,7 +145,7 @@
         <!-- KnightSource -->
         <activity
             android:name=".KnightSourceActivity"
-            android:label="Knight's Tour Source Code"
+            android:label="Knight&apos;s Tour Source Code"
             android:parentActivityName=".LayoutActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -178,7 +178,17 @@
                 android:value=".LayoutActivity" />
         </activity>
 
+        <!-- License -->
+        <activity
+            android:name=".MyLicenseActivity"
+            android:label="License"
+            android:parentActivityName=".LayoutActivity">
 
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LayoutActivity" />
+        </activity>
     </application>
 
 </manifest>

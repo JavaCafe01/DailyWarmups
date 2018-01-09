@@ -89,7 +89,7 @@ public class AboutActivity extends AppCompatActivity  {
 
     private  Intent navToAlpha()
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/apps/testing/com.gsnathan.dailywarmups"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/GmAAUk"));
         return browserIntent;
     }
 
@@ -97,6 +97,12 @@ public class AboutActivity extends AppCompatActivity  {
     {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://telegram.me/dailywarmups"));
         return browserIntent;
+    }
+
+    private  Intent navToMyLicense()
+    {
+        Intent licInent = new Intent(this, MyLicenseActivity.class);
+        return licInent;
     }
 
 
@@ -151,6 +157,11 @@ public class AboutActivity extends AppCompatActivity  {
         telegram.setIconDrawable(R.drawable.telegram);
         telegram.setIntent( navToTele());
 
+        Element myLic = new Element();
+        myLic.setTitle("License");
+        myLic.setIconDrawable(R.drawable.mylicense);
+        myLic.setIntent( navToMyLicense());
+
 
         final View aboutPage = new AboutPage(this)
                 .setImage(R.drawable.abouticon)
@@ -165,6 +176,7 @@ public class AboutActivity extends AppCompatActivity  {
                 .addEmail("andracmat@gmail.com", "Contact Andrew")
                 //.addItem(alpha)
                 .addItem(telegram)
+                .addItem(myLic)
                 .addItem(licenses)
                 .addItem(feed)
                 .create();
