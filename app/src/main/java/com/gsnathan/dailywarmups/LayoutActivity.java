@@ -80,27 +80,20 @@ public class LayoutActivity extends AppCompatActivity {
                                                                                           Intent intent5 = new Intent(getApplicationContext(), FlipHalvesActivity.class);
                                                                                           startActivity(intent5);
                                                                                           break;
+
                                                                                       case 6:
-                                                                                          Intent intent6 = new Intent(getApplicationContext(), SourceActivity.class);
-                                                                                          startActivity(intent6);
-                                                                                          break;
-                                                                                      case 7:
-                                                                                          Intent intent7 = new Intent(getApplicationContext(), PigSourceActivity.class);
-                                                                                          startActivity(intent7);
-                                                                                          break;
-                                                                                      case 8:
                                                                                           Intent intent8 = new Intent(getApplicationContext(), KnightActivity.class);
                                                                                           startActivity(intent8);
                                                                                           break;
-                                                                                      case 9:
+                                                                                      case 7:
                                                                                           Intent intent9 = new Intent(getApplicationContext(), KnightSourceActivity.class);
                                                                                           startActivity(intent9);
                                                                                           break;
-                                                                                      case 10:
+                                                                                      case 8:
                                                                                           Intent intent10 = new Intent(getApplicationContext(), AsciiActivity.class);
                                                                                           startActivity(intent10);
                                                                                           break;
-                                                                                      case 11:
+                                                                                      case 9:
                                                                                           Intent intent11 = new Intent(getApplicationContext(), AboutActivity.class);
                                                                                           startActivity(intent11);
                                                                                           break;
@@ -142,29 +135,21 @@ public class LayoutActivity extends AppCompatActivity {
                 "");
         results.add(5, obj5);
 
-        DataObject obj6 = new DataObject("Methods Source Code",
-                "");
+        DataObject obj6 = new DataObject("Knight's Tour",
+                "Thanks to Andrew da Cunha");
         results.add(6, obj6);
 
-        DataObject obj7 = new DataObject("Pig Latin Source Code",
-                "");
+        DataObject obj7 = new DataObject("Knight's Tour Source Code",
+                "Thanks to Andrew da Cunha");
         results.add(7, obj7);
 
-        DataObject obj8 = new DataObject("Knight's Tour",
-                "Thanks to Andrew da Cunha");
+        DataObject obj8 = new DataObject("Character Map",
+                "");
         results.add(8, obj8);
 
-        DataObject obj9 = new DataObject("Knight's Tour Source Code",
-                "Thanks to Andrew da Cunha");
+        DataObject obj9 = new DataObject("About Daily Warmups (alpha)",
+                "");
         results.add(9, obj9);
-
-        DataObject obj10 = new DataObject("Character Map",
-                "");
-        results.add(10, obj10);
-
-        DataObject obj11 = new DataObject("About Daily Warmups (alpha)",
-                "");
-        results.add(11, obj11);
 
         return results;
     }

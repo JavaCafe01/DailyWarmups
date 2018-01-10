@@ -4,10 +4,10 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.gsnathan.dailywarmups"
-        minSdkVersion 15
+        minSdkVersion 23
         targetSdkVersion 26
-        versionCode 24
-        versionName "12.11-alpha"
+        versionCode 25
+        versionName "12.12-alpha"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }

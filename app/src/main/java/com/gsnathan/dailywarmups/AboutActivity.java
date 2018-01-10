@@ -89,7 +89,7 @@ public class AboutActivity extends AppCompatActivity  {
 
     private  Intent navToAlpha()
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/GmAAUk"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups"));
         return browserIntent;
     }
 
@@ -143,7 +143,7 @@ public class AboutActivity extends AppCompatActivity  {
         open.setIntent( navToGit());
 
         Element alpha = new Element();
-        alpha.setTitle("Join Alpha testing");
+        alpha.setTitle("Join Alpha testing (On play store link just scroll down)");
         alpha.setIconDrawable(R.drawable.alpha);
         alpha.setIntent( navToAlpha());
 
@@ -164,7 +164,7 @@ public class AboutActivity extends AppCompatActivity  {
 
 
         final View aboutPage = new AboutPage(this)
-                .setImage(R.drawable.abouticon)
+                .setImage(R.mipmap.ic_launcher)
                 .setDescription("An app with simple java programs put together from AP Computer Science " + Utils.getEmojiByUnicode(unicode))
                 .addItem(me)
                 .addItem(versionElement)
