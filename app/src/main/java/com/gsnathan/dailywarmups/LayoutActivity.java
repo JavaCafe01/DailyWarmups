@@ -94,7 +94,7 @@ public class LayoutActivity extends AppCompatActivity {
                                                                                           startActivity(intent10);
                                                                                           break;
                                                                                       case 9:
-                                                                                          Intent intent11 = new Intent(getApplicationContext(), AboutActivity.class);
+                                                                                          Intent intent11 = new Intent(getApplicationContext(), MaterialAbout.class);
                                                                                           startActivity(intent11);
                                                                                           break;
                                                                                       default:

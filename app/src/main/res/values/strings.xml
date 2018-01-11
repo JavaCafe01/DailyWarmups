@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Daily Warmups</string>
-    <string name="app_name_alpha">Daily Warmups(Alpha)</string>
+    <string name="app_name_alpha">Daily Warmups(alpha)</string>
     <string name="app_copyright" translatable="false">© 2017 Gsnathan</string>
     <string name="version">Version</string>
 
@@ -17,25 +17,33 @@
     <string name="thanks">Thanks to Andrew da Cunha</string>
     <string name="knightSource">Knights Tour Source Code</string>
     <string name="character">Character Map</string>
-    <string name="about">About Daily Warmups</string>
-    <string name="about_alpha">About Daily Warmups(alpha)</string>
+    <string name="about">About</string>
 
     <!--About Page-->
     <string name="source_code">Source Code</string>
-    <string name="author">Author</string>
+    <string name="author">Developer</string>
+    <string name="collab">Special Thanks</string>
     <string name="author_name">Gokul Swaminathan</string>
     <string name="author2_name">Andrew da Cunha</string>
-    <string name="follow_on_github">Github</string>
+    <string name="author3_name">Chrislynn Dinh</string>
+    <string name="follow_on_github">Follow on Github</string>
     <string name="email">Email</string>
     <string name="auth_email_address">gsnathandev@outlook.com</string>
+    <string name="auth_email_address2">andracmat@gmail.com</string>
+    <string name="auth_email_address3">cdinh3507@gmail.com</string>
     <string name="feedback">Feedback</string>
+    <string name="feedbacktitle">Share and Feedback</string>
     <string name="rate">Rate</string>
+    <string name="myLicense">License</string>
+    <string name="openLicense">Open Source Licences</string>
+    <string name="changelog">Change Log</string>
+    <string name="copyright">Copyright &#169; 2017 Gsnathan</string>
 
 
     <string name="mitLicense">
        MIT License\n
         \n
-        Copyright &#169; 2018 Gokul Swaminathan\n
+        Copyright &#169; 2017 Gokul Swaminathan\n
         \n
         Permission is hereby granted, free of charge, to any person obtaining a copy
         of this software and associated documentation files (the "Software"), to deal

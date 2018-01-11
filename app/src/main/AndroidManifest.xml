@@ -158,12 +158,12 @@
         <activity
             android:name=".ForumActivity"
             android:label="Feedback"
-            android:parentActivityName=".LayoutActivity">
+            android:parentActivityName=".MaterialAbout">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LayoutActivity" />
+                android:value=".MaterialAbout" />
         </activity>
 
         <!-- Ascii -->
@@ -182,6 +182,18 @@
         <activity
             android:name=".MyLicenseActivity"
             android:label="License"
+            android:parentActivityName=".MaterialAbout">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MaterialAbout" />
+        </activity>
+
+        <activity
+            android:name=".MaterialAbout"
+            android:label="About"
+            android:theme="@style/AppTheme.MaterialAboutActivity"
             android:parentActivityName=".LayoutActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -189,6 +201,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LayoutActivity" />
         </activity>
+
+
+
     </application>
 
 </manifest>

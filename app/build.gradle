@@ -4,10 +4,10 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.gsnathan.dailywarmups"
-        minSdkVersion 23
+        minSdkVersion 15
         targetSdkVersion 26
-        versionCode 25
-        versionName "12.12-alpha"
+        versionCode 28
+        versionName "13.01-alpha"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -42,6 +42,7 @@ dependencies {
     implementation "com.android.support:support-annotations:27.0.2"
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.github.medyo:android-about-page:1.2.2'
+    compile 'com.github.daniel-stoneuk:material-about-library:2.2.3-support26.1.0'
 
 
 }
