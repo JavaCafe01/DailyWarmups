@@ -39,6 +39,16 @@
     <string name="changelog">Change Log</string>
     <string name="copyright">Copyright &#169; 2017 Gsnathan</string>
 
+    <string name="themetitle">Change Theme</string>
+    <string name="light">Light</string>
+    <string name="black">Black</string>
+
+    <string-array name="theme_array">
+        	        <item>Light</item>
+        	        <item>Black</item>
+        	    </string-array>
+
+
 
     <string name="mitLicense">
        MIT License\n

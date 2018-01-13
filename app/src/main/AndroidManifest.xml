@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/LightTheme">
 
         <!-- Main Page -->
         <activity android:name=".LayoutActivity">
@@ -183,7 +183,6 @@
             android:name=".MyLicenseActivity"
             android:label="License"
             android:parentActivityName=".MaterialAbout">
-
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -193,7 +192,7 @@
         <activity
             android:name=".MaterialAbout"
             android:label="About"
-            android:theme="@style/AppTheme.MaterialAboutActivity"
+            android:theme="@style/AppTheme.MaterialAboutActivity">
             android:parentActivityName=".LayoutActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->

@@ -27,7 +27,7 @@ public class Utils {
 
             if (lineNum > 1) {
                 for(int x = 0; x < counter; x ++)
-                output.append(space);
+                    output.append(space);
 
                 counter++;
             }

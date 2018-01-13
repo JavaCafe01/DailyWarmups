@@ -35,7 +35,7 @@ public class AboutActivity extends AppCompatActivity  {
         LibsBuilder builder = new LibsBuilder()
                 //provide a style (optional) (LIGHT, DARK, LIGHT_DARK_TOOLBAR)
                 .withActivityStyle(Libs.ActivityStyle.LIGHT_DARK_TOOLBAR)
-        ;
+                ;
 
 
         AboutView view = AboutBuilder.with(this)
