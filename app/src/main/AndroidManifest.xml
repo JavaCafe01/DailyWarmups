@@ -94,42 +94,6 @@
                 android:value=".LayoutActivity" />
         </activity>
 
-        <!-- Source -->
-        <activity
-            android:name=".SourceActivity"
-            android:label="Methods Source Code"
-            android:parentActivityName=".LayoutActivity">
-
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LayoutActivity" />
-        </activity>
-
-        <!-- Source -->
-        <activity
-            android:name=".PigSourceActivity"
-            android:label="Pig Latin Source Code"
-            android:parentActivityName=".LayoutActivity">
-
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LayoutActivity" />
-        </activity>
-
-        <!-- About -->
-        <activity
-            android:name=".AboutActivity"
-            android:label="About Daily Warmups (alpha)"
-            android:parentActivityName=".LayoutActivity">
-
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LayoutActivity" />
-        </activity>
-
         <!-- Knight -->
         <activity
             android:name=".KnightActivity"
@@ -189,6 +153,7 @@
                 android:value=".MaterialAbout" />
         </activity>
 
+        <!-- About -->
         <activity
             android:name=".MaterialAbout"
             android:label="About"
