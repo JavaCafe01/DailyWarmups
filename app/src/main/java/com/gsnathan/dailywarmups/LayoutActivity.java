@@ -93,8 +93,12 @@ public class LayoutActivity extends AppCompatActivity {
                                                                                           startActivity(intent10);
                                                                                           break;
                                                                                       case 9:
-                                                                                          Intent intent11 = new Intent(getApplicationContext(), MaterialAbout.class);
+                                                                                          Intent intent11 = new Intent(getApplicationContext(), ForumActivity.class);
                                                                                           startActivity(intent11);
+                                                                                          break;
+                                                                                      case 10:
+                                                                                          Intent intent12 = new Intent(getApplicationContext(), AboutActivity.class);
+                                                                                          startActivity(intent12);
                                                                                           break;
                                                                                       default:
                                                                                           Context context = getApplicationContext();
@@ -146,9 +150,13 @@ public class LayoutActivity extends AppCompatActivity {
                 "");
         results.add(8, obj8);
 
-        DataObject obj9 = new DataObject("About Daily Warmups (alpha)",
+        DataObject obj9 = new DataObject("Feedback",
                 "");
         results.add(9, obj9);
+
+        DataObject obj10 = new DataObject("About Daily Warmups",
+                "");
+        results.add(10, obj10);
 
         return results;
     }

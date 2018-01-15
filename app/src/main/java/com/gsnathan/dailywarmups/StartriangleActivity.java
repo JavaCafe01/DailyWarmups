@@ -29,9 +29,9 @@ public class StartriangleActivity extends AppCompatActivity {
                         new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                int starheight = Integer.parseInt(height.getText().toString());
                                 Context context = getApplicationContext();
                                 try {
+                                    int starheight = Integer.parseInt(height.getText().toString());
                                     Utils methods = new Utils(output);
                                     if (starheight > 100) {
                                         Utils.showToast(context, "Size must be less than 100", Toast.LENGTH_SHORT);

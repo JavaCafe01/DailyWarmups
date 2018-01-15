@@ -3,6 +3,7 @@
     <string name="app_name_alpha">Daily Warmups(alpha)</string>
     <string name="app_copyright" translatable="false">© 2017 Gsnathan</string>
     <string name="version">Version</string>
+    <string name="slogan">An app with simple java programs put together from AP Computer Science 😄</string>
 
     <!--Warmup Titles-->
     <string name="square">Star Square</string>
@@ -21,7 +22,7 @@
 
     <!--About Page-->
     <string name="source_code">Source Code</string>
-    <string name="author">Developer</string>
+    <string name="author">App Developer</string>
     <string name="collab">Special Thanks</string>
     <string name="author_name">Gokul Swaminathan</string>
     <string name="author2_name">Andrew da Cunha</string>

@@ -6,8 +6,8 @@ android {
         applicationId "com.gsnathan.dailywarmups"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 29
-        versionName "13.02-alpha"
+        versionCode 30
+        versionName "14"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -32,13 +32,16 @@ dependencies {
     compile 'com.codemybrainsout.rating:ratingdialog:1.0.8'
     compile 'com.android.support:recyclerview-v7:26.0.+'
 
-    implementation('com.mikepenz:aboutlibraries:6.0.1@aar') {
-        transitive = true
-    }
 
     implementation "com.android.support:support-annotations:27.0.2"
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    compile 'com.github.daniel-stoneuk:material-about-library:2.2.3-support26.1.0'
+
+    implementation 'me.drakeet.support:about:2.0.2'
+    implementation 'me.drakeet.multitype:multitype:3.3.3'
+    // extension for loading our host Android Links data
+    // implementation 'me.drakeet.support:about-extension:2.0.2'
+    // for using the PicassoImageLoader
+    // implementation 'com.squareup.picasso:picasso:2.5.2'
 
 
 }

@@ -30,9 +30,10 @@ public class StarsquareActivity extends AppCompatActivity {
                         new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                int starsize = Integer.parseInt(size.getText().toString());
+
                                 Context context = getApplicationContext();
                                 try {
+                                    int starsize = Integer.parseInt(size.getText().toString());
                                     Utils methods = new Utils(output);
                                     if (starsize > 100) {
                                         Utils.showToast(context, "Size must be less than 100", Toast.LENGTH_SHORT);
