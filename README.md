@@ -1,6 +1,6 @@
 # Daily Warmups     
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE) [![author](https://img.shields.io/badge/author-Gokul%20Swaminathan-lightgrey.svg?style=flat-square)](https://github.com/JavaCafe01) [![platform](https://img.shields.io/badge/platform-Android-green.svg?style=flat-square)](https://www.android.com/)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE) [![author](https://img.shields.io/badge/author-Gokul%20Swaminathan-lightgrey.svg?style=flat-square)](https://github.com/JavaCafe01) [![platform](https://img.shields.io/badge/platform-Android-green.svg?style=flat-square)](https://www.android.com/)
 
 ### Download
 
@@ -8,10 +8,10 @@
 
 ### Example Screenshots
 
-| Pig Latin Translator | Pig Latin Source Code |
+| Main Page | Knight's Tour |
 |:-:|:-:|
-| <img src ="./screenshots/device_2.png" width="180" height="360"/> | <img src ="./screenshots/device_3.png" width="180" height="360"/> |
-| [`PigLatinHelper.java`](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/java/com/gsnathan/dailywarmups/PigLatinHelper.java) | [`PigSourceAtivity.java`](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/java/com/gsnathan/dailywarmups/PigSourceAtivity.java) | 
+| <img src ="./screenshots/layout.png" width="180" height="360"/> | <img src ="./screenshots/knightstour.png" width="180" height="360"/> |
+| [`LayoutActivity.java`](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/java/com/gsnathan/dailywarmups/LayoutActivity.java) | [`KnightHelper.java`](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/java/com/gsnathan/dailywarmups/KnightHelper.java) | 
 
 ### Contribute
 
@@ -52,6 +52,9 @@ SOFTWARE.
 |[Andrew da Cunha][user] for the Knight's Tour|
 |:-------------------------------------------:|
 |Contact him --> andracmat@gmail.com|
+
+|Chrislynn Dinh for the app icon              |
+|:-------------------------------------------:|
 
 [mit]: https://opensource.org/licenses/MIT
 [beta]: https://play.google.com/apps/testing/com.gsnathan.dailywarmups
