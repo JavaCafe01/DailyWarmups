@@ -6,7 +6,7 @@
 
 <a href='https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="250" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
 
-### Example Screenshots
+### Screenshots
 
 | Main Page | Knight's Tour |
 |:-:|:-:|
@@ -53,8 +53,7 @@ SOFTWARE.
 |:-------------------------------------------:|
 |Contact him --> andracmat@gmail.com|
 
-|Chrislynn Dinh for the app icon              |
-|:-------------------------------------------:|
+
 
 [mit]: https://opensource.org/licenses/MIT
 [beta]: https://play.google.com/apps/testing/com.gsnathan.dailywarmups
