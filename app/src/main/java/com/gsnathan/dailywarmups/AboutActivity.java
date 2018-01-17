@@ -41,7 +41,7 @@ public class AboutActivity extends AbsAboutActivity {
         items.add(new Card(getString(R.string.mitLicense)));
         items.add(new Contributor(R.drawable.code_tags, "Source Code", "Github", "https://github.com/JavaCafe01/DailyWarmups"));
         items.add(new Contributor(R.drawable.telegram_new, "Change Log", "Telegram", "https://telegram.me/dailywarmups"));
-        items.add(new Contributor(R.drawable.test_tube, "Become an alpha tester", "Scroll down on PlayStore", "https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups"));
+        items.add(new Contributor(R.drawable.test_tube, "You are already an alpha tester!", ";)", "https://play.google.com/store/apps/details?id=com.gsnathan.dailywarmups"));
 
 
         items.add(new Category("Developers"));
