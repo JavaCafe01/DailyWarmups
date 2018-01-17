@@ -1,0 +1,34 @@
+0:67 pusher-java-client
+69:46 ratingdialog
+952:46 recyclerview-v7
+165:65 java-websocket
+232:46 appcompat-v7
+280:46 cardview-v7
+328:46 animated-vector-drawable
+376:46 support-vector-drawable
+424:46 support-v4
+472:46 support-media-compat
+520:46 support-fragment
+568:46 support-core-utils
+616:46 support-core-ui
+664:46 support-compat
+1146:46 support-annotations
+760:46 runtime
+856:46 common
+904:46 design
+1000:47 play-services-oss-licenses
+1049:46 transition
+1097:47 play-services-basement
+1194:1558 RE2
+2754:1732 Protobuf Nano
+4488:1481 darts_clone
+5971:3182 PCRE
+9155:2500 zlib
+11657:11358 CCTZ
+23017:19442 ICU4C
+42461:243 tz database
+42706:1602 JSR 305
+44310:731 UTF
+45043:680 STL
+45725:11358 safeparcel
+57085:11342 flatbuffers
