@@ -13,6 +13,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import static android.app.UiModeManager.MODE_NIGHT_NO;
+import static android.app.UiModeManager.MODE_NIGHT_YES;
+
 
 public class LayoutActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
@@ -53,6 +56,7 @@ public class LayoutActivity extends AppCompatActivity {
                                                                               @Override
                                                                               public void onItemClick(int position, View v) {
                                                                                   Log.i(LOG_TAG, " Clicked on Item " + position);
+                                                                                  AboutActivity about = new AboutActivity();
                                                                                   switch (position) {
                                                                                       case 0:
                                                                                           Intent intent = new Intent(getApplicationContext(), StarsquareActivity.class);

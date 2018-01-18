@@ -3,6 +3,7 @@ package com.gsnathan.dailywarmups;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatDelegate;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +15,8 @@ import me.drakeet.support.about.Category;
 import me.drakeet.support.about.Contributor;
 import me.drakeet.support.about.License;
 
+import static android.app.UiModeManager.MODE_NIGHT_NO;
+
 /**
  * Created by Gokul Swaminathan on 1/14/2018.
  */
@@ -21,10 +24,23 @@ import me.drakeet.support.about.License;
 public class AboutActivity extends AbsAboutActivity {
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String version = BuildConfig.VERSION_NAME;
+        if(version.contains("alpha"))
+        {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
+        else
+        {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        }
+
         super.onCreate(savedInstanceState);
     }
+
+
 
     @Override
     protected void onCreateHeader(@NonNull ImageView icon, @NonNull TextView slogan, @NonNull TextView version) {
@@ -41,7 +57,7 @@ public class AboutActivity extends AbsAboutActivity {
         items.add(new Card(getString(R.string.mitLicense)));
         items.add(new Contributor(R.drawable.code_tags, "Source Code", "Github", "https://github.com/JavaCafe01/DailyWarmups"));
         items.add(new Contributor(R.drawable.telegram_new, "Change Log", "Telegram", "https://telegram.me/dailywarmups"));
-        items.add(new Contributor(R.drawable.test_tube, "You are already an alpha tester!", ";)", "https://github.com/JavaCafe01/DailyWarmups/blob/master/ALPHA.md"));
+        items.add(new Contributor(R.drawable.test_tube, "You are an alpha tester!", ";)", "https://github.com/JavaCafe01/DailyWarmups/blob/master/ALPHA.md"));
 
 
         items.add(new Category("Developers"));
