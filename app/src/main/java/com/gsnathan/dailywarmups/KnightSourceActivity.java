@@ -1,5 +1,6 @@
 package com.gsnathan.dailywarmups;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
@@ -18,6 +19,16 @@ public class KnightSourceActivity extends AppCompatActivity {
     private StringBuilder text = new StringBuilder();
 
     protected void onCreate(Bundle savedInstanceState) {
+        SharedPreferences pref = getSharedPreferences("prefs", MODE_PRIVATE);
+        boolean useDarkTheme = pref.getBoolean("dark_theme", false);
+        if(useDarkTheme)
+        {
+            setTheme(R.style.DarkTheme);
+        }
+        else
+        {
+            setTheme(R.style.AppTheme);
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_knightsource);
         BufferedReader reader = null;

@@ -31,6 +31,17 @@ public class AsciiActivity   extends AppCompatActivity{
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
+            SharedPreferences pref = getSharedPreferences("prefs", MODE_PRIVATE);
+            boolean useDarkTheme = pref.getBoolean("dark_theme", false);
+            if(useDarkTheme)
+            {
+                setTheme(R.style.DarkTheme);
+            }
+            else
+            {
+                setTheme(R.style.AppTheme);
+            }
+
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_ascii);
 

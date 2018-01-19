@@ -1,6 +1,7 @@
 package com.gsnathan.dailywarmups;
 
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatDelegate;
@@ -27,14 +28,15 @@ public class AboutActivity extends AbsAboutActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String version = BuildConfig.VERSION_NAME;
-        if(version.contains("alpha"))
+        SharedPreferences pref = getSharedPreferences("prefs", MODE_PRIVATE);
+        boolean useDarkTheme = pref.getBoolean("dark_theme", false);
+        if(useDarkTheme)
         {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         }
         else
         {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         }
 
         super.onCreate(savedInstanceState);

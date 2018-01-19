@@ -1,7 +1,10 @@
 package com.gsnathan.dailywarmups;
 
+import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
@@ -22,9 +25,17 @@ public class LayoutActivity extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private static String LOG_TAG = "RecyclerViewActivity";
+    private boolean darkTheme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SharedPreferences pref = getSharedPreferences("prefs", MODE_PRIVATE);
+        boolean useDarkTheme = pref.getBoolean("dark_theme", false);
+        if (useDarkTheme) {
+            setTheme(R.style.DarkTheme);
+        } else {
+            setTheme(R.style.AppTheme);
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_layout);
 
@@ -101,6 +112,10 @@ public class LayoutActivity extends AppCompatActivity {
                                                                                           startActivity(intent11);
                                                                                           break;
                                                                                       case 10:
+                                                                                          Intent intent13 = new Intent(getApplicationContext(), SettingsActivity.class);
+                                                                                          startActivity(intent13);
+                                                                                          break;
+                                                                                      case 11:
                                                                                           Intent intent12 = new Intent(getApplicationContext(), AboutActivity.class);
                                                                                           startActivity(intent12);
                                                                                           break;
@@ -158,15 +173,16 @@ public class LayoutActivity extends AppCompatActivity {
                 "");
         results.add(9, obj9);
 
-        DataObject obj10 = new DataObject("About Daily Warmups",
+        DataObject obj10 = new DataObject("Settings",
                 "");
         results.add(10, obj10);
 
+        DataObject obj11 = new DataObject("About Daily Warmups",
+                "");
+        results.add(11, obj11);
+
+
         return results;
     }
-
-
-
-
 
 }

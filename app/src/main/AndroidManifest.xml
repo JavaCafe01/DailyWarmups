@@ -142,7 +142,6 @@
                 android:value=".LayoutActivity" />
         </activity>
 
-
         <!-- About -->
         <activity
             android:name=".AboutActivity"
@@ -157,7 +156,17 @@
         </activity>
 
 
+        <!-- Settings -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".LayoutActivity">
 
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LayoutActivity" />
+        </activity>
     </application>
 
 </manifest>

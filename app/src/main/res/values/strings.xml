@@ -45,10 +45,9 @@
     <string name="black">Black</string>
 
     <string-array name="theme_array">
-        	        <item>Light</item>
-        	        <item>Black</item>
-        	    </string-array>
-
+        <item>Light</item>
+        <item>Black</item>
+    </string-array>
 
 
     <string name="mitLicense">
