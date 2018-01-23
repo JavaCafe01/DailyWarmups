@@ -56,10 +56,11 @@ public class AboutActivity extends AbsAboutActivity {
     @Override
     protected void onItemsCreated(@NonNull Items items) {
         items.add(new Category("About"));
-        items.add(new Card(getString(R.string.mitLicense)));
+        //items.add(new Card(getString(R.string.mitLicense)));
         items.add(new Contributor(R.drawable.code_tags, "Source Code", "Github", "https://github.com/JavaCafe01/DailyWarmups"));
         items.add(new Contributor(R.drawable.telegram_new, "Change Log", "Telegram", "https://telegram.me/dailywarmups"));
-        items.add(new Contributor(R.drawable.test_tube, "You are an alpha tester!", ";)", "https://github.com/JavaCafe01/DailyWarmups/blob/master/ALPHA.md"));
+        items.add(new Contributor(R.drawable.test_tube, "Become an alpha tester!", "Warning: May contain bugs.", "https://play.google.com/apps/testing/com.gsnathan.dailywarmups"));
+        items.add(new Contributor(R.drawable.document_icon, "License", "MIT License", "https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE"));
 
 
         items.add(new Category("Developers"));
