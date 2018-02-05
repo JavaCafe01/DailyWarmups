@@ -57,10 +57,10 @@ public class AboutActivity extends AbsAboutActivity {
     protected void onItemsCreated(@NonNull Items items) {
         items.add(new Category("About"));
         //items.add(new Card(getString(R.string.mitLicense)));
-        items.add(new Contributor(R.drawable.code_tags, "Source Code", "Github", "https://github.com/JavaCafe01/DailyWarmups"));
-        items.add(new Contributor(R.drawable.telegram_new, "Change Log", "Telegram", "https://telegram.me/dailywarmups"));
-        items.add(new Contributor(R.drawable.test_tube, "You are an alpha tester!", ";)", "https://play.google.com/apps/testing/com.gsnathan.dailywarmups"));
-        items.add(new Contributor(R.drawable.document_icon, "License", "MIT License", "https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE"));
+        items.add(aboutMenu(R.drawable.code_tags, "Source Code", "Github", "https://github.com/JavaCafe01/DailyWarmups"));
+        items.add(aboutMenu(R.drawable.telegram_new, "Change Log", "Telegram", "https://telegram.me/dailywarmups"));
+        items.add(aboutMenu(R.drawable.test_tube, "You are an alpha tester!", ";)", "https://play.google.com/apps/testing/com.gsnathan.dailywarmups"));
+        items.add(aboutMenu(R.drawable.document_icon, "License", "MIT License", "https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE"));
 
 
         items.add(new Category("Developers"));
@@ -73,5 +73,10 @@ public class AboutActivity extends AbsAboutActivity {
         items.add(new License("about-page", "Android Links", License.APACHE_2, "https://github.com/android-links/about-page"));
         items.add(new License("Retrofit", "Square, Inc.", License.APACHE_2, "https://square.github.io/retrofit/"));
         items.add(new License("Material Design", "Templarian", License.APACHE_2, "https://github.com/Templarian/MaterialDesign"));
+    }
+
+    private Contributor aboutMenu(int drawable, String name, String sub, String url)
+    {
+        return new Contributor(drawable, name, sub, url);
     }
 }
