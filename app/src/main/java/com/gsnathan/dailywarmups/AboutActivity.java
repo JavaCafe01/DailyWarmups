@@ -15,7 +15,6 @@ import me.drakeet.support.about.Card;
 import me.drakeet.support.about.Category;
 import me.drakeet.support.about.Contributor;
 import me.drakeet.support.about.License;
-
 import static android.app.UiModeManager.MODE_NIGHT_NO;
 
 /**
@@ -59,7 +58,7 @@ public class AboutActivity extends AbsAboutActivity {
         //items.add(new Card(getString(R.string.mitLicense)));
         items.add(aboutMenu(R.drawable.code_tags, "Source Code", "Github", "https://github.com/JavaCafe01/DailyWarmups"));
         items.add(aboutMenu(R.drawable.telegram_new, "Change Log", "Telegram", "https://telegram.me/dailywarmups"));
-        items.add(aboutMenu(R.drawable.test_tube, "You are an alpha tester!", ";)", "https://play.google.com/apps/testing/com.gsnathan.dailywarmups"));
+        //items.add(aboutMenu(R.drawable.test_tube, "You are an alpha tester!", ";)", "https://play.google.com/apps/testing/com.gsnathan.dailywarmups"));
         items.add(aboutMenu(R.drawable.document_icon, "License", "MIT License", "https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE"));
 
 
