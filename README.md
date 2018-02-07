@@ -1,3 +1,5 @@
+# ![Daily Warmups](https://github.com/JavaCafe01/DailyWarmups/blob/master/app/src/main/res/mipmap-mdpi/ic_launcher.png "Daily Warmups") Material Compass 
+
 # Daily Warmups     
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/JavaCafe01/DailyWarmups/blob/master/LICENSE) [![author](https://img.shields.io/badge/author-Gokul%20Swaminathan-lightgrey.svg?style=flat-square)](https://github.com/JavaCafe01) [![platform](https://img.shields.io/badge/platform-Android-green.svg?style=flat-square)](https://www.android.com/)
